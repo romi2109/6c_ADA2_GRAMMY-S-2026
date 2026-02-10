@@ -1,0 +1,214 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premios GRAMMY: Celebrando la Excelencia Musical</title>
+    <style>
+        /* Variables de diseño y accesibilidad */
+        :root {
+            --gold: #d4af37;
+            --dark-bg: #121212;
+            --light-text: #ffffff;
+            --focus-outline: #3498db;
+        }
+
+        /* Reseteo básico y tipografía */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+        }
+
+        /* Navegación accesible */
+        nav {
+            background-color: #000;
+            padding: 1rem;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 2px solid transparent;
+        }
+
+        /* Foco visible para navegación por teclado */
+        nav a:focus, button:focus, .card a:focus {
+            outline: 3px solid var(--focus-outline);
+            outline-offset: 4px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Encabezado Principal */
+        header {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1514525253361-bee8718a74a2?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            color: var(--gold);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contenedor principal */
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Secciones y Artículos */
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        article {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+
+        .article-content {
+            padding: 1.5rem;
+        }
+
+        img {
+            max-width: 1000px;
+            height: auto;
+            display: block;
+        }
+
+        .news-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        h2, h3 {
+            color: var(--gold);
+        }
+
+        /* Enlaces descriptivos */
+        .read-more {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #4db8ff;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            border-top: 1px solid #333;
+        }
+
+        /* Responsividad */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            nav ul { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#nominados">Nominados</a></li>
+            <li><a href="#historia">Historia</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio">
+        <h1>Premios GRAMMY®</h1>
+        <p>El mayor reconocimiento a la excelencia en la industria musical.</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Acerca de la Academia</h2>
+            <p>Los GRAMMY son otorgados por <strong>The Recording Academy</strong> para reconocer logros destacados en el arte y la ciencia de la grabación.</p>
+        </section>
+
+        <section id="categorias">
+            <h2>Categorías Destacadas</h2>
+            <div class="news-grid">
+                
+                <article>
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=500&q=80" 
+                         alt="Primer plano de una consola de mezcla de audio profesional en un estudio de grabación" 
+                         class="news-img">
+                    <div class="article-content">
+                        <h3>Álbum del Año</h3>
+                        <p>El galardón más prestigioso que premia la calidad técnica y artística de una producción completa.</p>
+                        <a href="#" class="read-more">Explorar nominados a Álbum del Año</a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=500&q=80" 
+                         alt="Micrófono de condensador vintage sobre un fondo oscuro con luces tenues" 
+                         class="news-img">
+                    <div class="article-content">
+                        <h3>Mejor Artista Nuevo</h3>
+                        <p>Reconociendo el impacto de los talentos emergentes que han redefinido el panorama musical este año.</p>
+                        <a href="#" class="read-more">Ver lista de artistas emergentes</a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=500&q=80" 
+                         alt="Persona tocando una guitarra acústica bajo una luz cálida" 
+                         class="news-img">
+                    <div class="article-content">
+                        <h3>Canción del Año</h3>
+                        <p>Un premio dedicado específicamente a los compositores que crean las letras y melodías que nos mueven.</p>
+                        <a href="#" class="read-more">Consultar compositores nominados</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Información Educativa sobre los Premios GRAMMY.</p>
+        <p>Este sitio ha sido diseñado siguiendo las pautas de accesibilidad para el contenido web (WCAG).</p>
+    </footer>
+
+</body>
+</html>
